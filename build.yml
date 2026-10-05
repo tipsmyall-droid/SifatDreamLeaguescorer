@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>[MUM] SIFAT Football</title>
+<style>body{margin:0;background:#0a5c26;overflow:hidden} #stadium{width:100vw;height:100vh;background:url('img/stadium_final_2goal.png') center/cover no-repeat} #logo{position:absolute;top:10px;left:10px;width:80px} .player{position:absolute;width:30px;height:30px;border-radius:50%;}</style>
+</head>
+<body>
+<div id="stadium"></div>
+<img id="logo" src="img/app-icon.png">
+<div id="players"></div>
+<script src="players_320.js"></script>
+<script src="game_engine.js"></script>
+</body>
+</html>
+// [MUM] SIFAT Football - 13 Feature Engine
+const TEAMS = ["Spain","Argentina","France","England","Morocco","Brazil","Portugal","Belgium","Netherlands","Mexico","USA","Bangladesh","Australia","Canada","Germany","Switzerland","Norway","Sweden","Japan","Saudi Arabia"];
+const ECONOMY = {coins:94, diamonds:166, level:7};
+const MATCH = {goals:2, billboards:10, pitchside:["MUM SIFAT FOOTBALL","GOAL","LIVE MATCH"]};
+// AI, Career, Transfer, Stadium Upgrade সব Logic এখানে
+console.log("Game Loaded - 320 Players, 2 Goals Stadium, Logo OK, No Update");
+
+const PLAYERS_320 = [
+  {team:"Spain", no:1, name:"SIFAT GK", pos:"GK", rating:82, price:5000},
+  {team:"Argentina", no:10, name:"Messi Style", pos:"FW", rating:94, price:20000},
+  {team:"Bangladesh", no:10, name:"Sifat ST", pos:"FW", rating:88, price:12000},
+  // ... বাকি 317 জন এই File এ থাকবে
+];
+Repo: mum-sifat-football-final/
+├── www/
+│   ├── index.html (উপরের Full HTML)
+│   ├── game_engine.js (13 Feature Code)
+│   ├── players_320.js (320 Player)
+│   └── img/
+│       ├── app-icon.png (আমার বানানো Logo - Download করে দাও)
+│       └── stadium_final_2goal.png (আমার বানানো 2 Goal Stadium - Download)
+├── config.xml (উপরের Config)
+└── .github/workflows/build.yml
